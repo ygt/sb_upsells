@@ -1,11 +1,10 @@
+const { createRoot } = ReactDOM
+
 const UPGRADES_URL = "https://api.jsonbin.io/v3/qs/672b3c19acd3cb34a8a39af3"
 
-document.addEventListener("DOMContentLoaded", () => {
-  window.Stimulus.register("upgrades", class extends Controller {
-    static targets = ["hello"]
+const Hello = (props) => {
+  return <div>Hello {props.name}! 😃</div>
+}
 
-    connect() {
-      this.helloTarget.textContent = "Hello! 😃"
-    }
-  })
-})
+const root = createRoot(document.getElementById("root"))
+root.render(<Hello name="World"/>)
