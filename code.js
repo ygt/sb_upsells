@@ -1,4 +1,4 @@
-const UPGRADES_URL = "https://api.jsonbin.io/v3/qs/67334534ad19ca34f8c8deac"
+const UPGRADES_URL = "https://api.jsonbin.io/v3/qs/6733454fe41b4d34e45321f9"
 
 document.addEventListener("DOMContentLoaded", () => {
   window.Stimulus.register("upgrades", class extends Controller {
